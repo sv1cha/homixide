@@ -1,4 +1,4 @@
-#include <code.h>
+#include "code.h"
 
 code::code(int skey) {
     key=skey;

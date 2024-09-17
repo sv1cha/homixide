@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <code.h>
+#include "code.h"
 
 bool isValid(const int k, string &text) {
     int razm=text.size();

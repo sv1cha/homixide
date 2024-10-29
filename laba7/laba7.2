@@ -1,0 +1,34 @@
+import socket
+
+# Список студентов (фамилия: имя)
+students = {
+    "Селуков": "Егор",
+    "Удалов": "Влад",
+    "Сверчков": "Артем",
+    "Беликов": "Алексей"
+}
+
+def start_server(host='localhost', port=12345):
+    # Создаем UDP сокет
+    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as server_socket:
+        server_socket.bind((host, port))
+
+        print(f"Сервер запущен на {host}:{port}. Ожидание сообщений...")
+
+        while True:
+            # Получаем данные от клиента
+            data, addr = server_socket.recvfrom(1024)
+            surname = data.decode('utf-8').strip()
+            print(f"Получено сообщение от {addr}: {surname}")
+
+            # Проверяем фамилию
+            if surname in students:
+                response = f"Привет, {students[surname]}!".encode('utf-8')
+            else:
+                response = "Ошибка: Фамилия не найдена в списке студентов.".encode('utf-8')
+
+            # Отправляем ответ клиенту
+            server_socket.sendto(response, addr)
+
+if __name__ == "__main__":
+    start_server()

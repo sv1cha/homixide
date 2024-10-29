@@ -1,0 +1,37 @@
+import socket
+
+# Список студентов (фамилия: имя)
+students = {
+    "Селуков": "Егор",
+    "Удалов": "Влад",
+    "Сверчков": "Артем",
+    "Беликов": "Алексей"
+}
+
+def start_server(host='localhost', port=12345):
+    # Создаем TCP сокет
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
+        server_socket.bind((host, port))
+        server_socket.listen()
+
+        print(f"Сервер запущен на {host}:{port}. Ожидание подключения...")
+        
+        while True:
+            conn, addr = server_socket.accept()
+            with conn:
+                print(f"Подключено к {addr}")
+                # Запрашиваем фамилию у клиента
+                conn.sendall("Введите вашу фамилию: ".encode('utf-8'))
+                surname = conn.recv(1024).decode('utf-8').strip()
+
+                # Проверяем фамилию
+                if surname in students:
+                    response = f"Привет, {students[surname]}!".encode('utf-8')
+                else:
+                    response = "Ошибка: Фамилия не найдена в списке студентов.".encode('utf-8')
+
+                # Отправляем ответ клиенту
+                conn.sendall(response)
+
+if __name__ == "__main__":
+    start_server()

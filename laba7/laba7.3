@@ -1,0 +1,19 @@
+import requests
+
+# URL страницы, которую нужно загрузить
+url = "http://rokot.ibst.psu/anatoly/"
+
+try:
+    # Отправляем GET-запрос
+    response = requests.get(url)
+
+    # Проверяем статус-код ответа
+    if response.status_code == 200:
+        print("Страница загружена успешно!")
+        print("Содержимое страницы:")
+        print(response.text)  # Выводим содержимое страницы
+    else:
+        print(f"Ошибка при загрузке страницы. Статус-код: {response.status_code}")
+
+except requests.exceptions.RequestException as e:
+    print(f"Произошла ошибка: {e}")

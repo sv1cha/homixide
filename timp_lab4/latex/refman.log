@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.29)  25 NOV 2024 22:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.29)  26 NOV 2024 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1093,7 +1093,24 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 162.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 162.
 
 Package hyperref Info: Option `unicode' set `true' on input line 162.
- [1
+LaTeX Font Info:    Trying to load font information for U+msa on input line 167
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 167
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 16
+7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+) [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
@@ -1102,28 +1119,190 @@ Package hyperref Info: Option `unicode' set `true' on input line 162.
 \tf@toc=\write6
 \openout6 = `refman.toc'.
 
+
+
+LaTeX Font Warning: Font shape `T2A/phv/b/n' undefined
+(Font)              using `T2A/phv/m/n' instead on input line 175.
+
+LaTeX Font Info:    Trying to load font information for T2A+pcr on input line 1
+75.
+LaTeX Font Info:    No file T2Apcr.fd. on input line 175.
+
+LaTeX Font Warning: Font shape `T2A/pcr/m/n' undefined
+(Font)              using `T2A/cmr/m/n' instead on input line 175.
+
+[1] [2
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 178.
- (./refman.ind) (./refman.aux)
+
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
+
+LaTeX Font Warning: Font shape `T2A/phv/bc/n' undefined
+(Font)              using `T2A/phv/m/n' instead on input line 180.
+
+(./hierarchy.tex) [1
+
+]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 182.
+ [2
+
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
+(./annotated.tex) [3] [4
+
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
+(./files.tex) [5] [6
+
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+(./classcipher__error.tex <./classcipher__error__inherit__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classcipher__error__inherit__graph.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>
+<classcipher__error__inherit__graph.pdf, id=207, 182.6825pt x 156.585pt>
+File: classcipher__error__inherit__graph.pdf Graphic file (type pdf)
+<use classcipher__error__inherit__graph.pdf>
+Package pdftex.def Info: classcipher__error__inherit__graph.pdf  used on input 
+line 19.
+(pdftex.def)             Requested size: 182.0pt x 156.0064pt.
+ <./classcipher__error__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classcipher__error__coll__graph.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+>
+<classcipher__error__coll__graph.pdf, id=215, 182.6825pt x 156.585pt>
+File: classcipher__error__coll__graph.pdf Graphic file (type pdf)
+<use classcipher__error__coll__graph.pdf>
+Package pdftex.def Info: classcipher__error__coll__graph.pdf  used on input lin
+e 29.
+(pdftex.def)             Requested size: 182.0pt x 156.0064pt.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
+5.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 35.
+
+
+LaTeX Font Warning: Font shape `T2A/phv/m/it' undefined
+(Font)              using `T2A/phv/m/n' instead on input line 36.
+
+[7]
+
+LaTeX Font Warning: Font shape `T2A/pcr/b/n' undefined
+(Font)              using `T2A/pcr/m/n' instead on input line 48.
+
+
+LaTeX Font Warning: Font shape `T2A/pcr/m/it' undefined
+(Font)              using `T2A/pcr/m/n' instead on input line 49.
+
+) (./classmodAlphaCipher.tex [8] [9]
+Underfull \hbox (badness 10000) detected at line 88
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 106
+[][][]
+ []
+
+[10]
+Underfull \hbox (badness 10000) detected at line 124
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 147
+[][][]
+ []
+
+[11]
+Underfull \hbox (badness 10000) detected at line 170
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 193
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 216
+[][][]
+ []
+
+[12]) [13] [14
+
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
+(./modAlphaCipher_8h.tex <./modAlphaCipher_8h__incl.pdf
+
+pdfTeX warning: pdflatex (file ./modAlphaCipher_8h__incl.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>
+<modAlphaCipher_8h__incl.pdf, id=326, 330.23375pt x 156.585pt>
+File: modAlphaCipher_8h__incl.pdf Graphic file (type pdf)
+<use modAlphaCipher_8h__incl.pdf>
+Package pdftex.def Info: modAlphaCipher_8h__incl.pdf  used on input line 12.
+(pdftex.def)             Requested size: 329.0pt x 156.0064pt.
+
+Underfull \hbox (badness 10000) detected at line 25
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][][]
+ []
+
+[15]
+Underfull \hbox (badness 10000) detected at line 31
+[][][]
+ []
+
+) (./modAlphaCipher_8h_source.tex) [16] (./refman.ind [17
+
+
+
+
+]) (./refman.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 3F50451184739942FDA2B3FD71974EFE;5589.
  ) 
 Here is how much of TeX's memory you used:
- 19515 strings out of 477525
- 313823 string characters out of 5832488
- 1851330 words of memory out of 5000000
- 39352 multiletter control sequences out of 15000+600000
- 517297 words of font info for 38 fonts, out of 8000000 for 9000
+ 19916 strings out of 477525
+ 321347 string characters out of 5832488
+ 1865330 words of memory out of 5000000
+ 39606 multiletter control sequences out of 15000+600000
+ 530319 words of font info for 71 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 101i,5n,117p,322b,482s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/stud/.texlive2022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk>
- </home/stud/.texlive2022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk>
-Output written on refman.pdf (2 pages, 9986 bytes).
+ 101i,15n,117p,498b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/stud/.texlive2022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm0900.600pk>
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/stud/.texliv
+e2022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm2488.600pk> </home/stud/.texlive2
+022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm2074.600pk> </home/stud/.texlive202
+2/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm0700.600pk> </home/stud/.texlive2022/
+texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm0800.600pk>{/usr/share/texmf/fonts/enc/
+dvips/cm-super/cm-super-t2a.enc} </home/stud/.texlive2022/texmf-var/fonts/pk/lj
+four/lh/lh-t2a/larm1200.600pk> </home/stud/.texlive2022/texmf-var/fonts/pk/ljfo
+ur/lh/lh-t2a/larm1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on refman.pdf (21 pages, 199530 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
- 1 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 747 PDF objects out of 1000 (max. 8388607)
+ 399 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 

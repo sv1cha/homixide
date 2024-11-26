@@ -1,4 +1,4 @@
-\hypertarget{classcode}{}\doxysection{code Class Reference}
+\hypertarget{classcode}{}\doxysection{Класс code}
 \label{classcode}\index{code@{code}}
 
 
@@ -9,7 +9,7 @@
 
 {\ttfamily \#include $<$code.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Открытые члены}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classcode_a40cf3e7a6c5d64a6c25a3aedfcfc5530}\label{classcode_a40cf3e7a6c5d64a6c25a3aedfcfc5530}} 
@@ -21,12 +21,27 @@ string \mbox{\hyperlink{classcode_ab05696a59d3edffbfa8bfe844abca7ac}{encryption}
 \begin{DoxyCompactList}\small\item\em Метод для шифрования текста. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{classcode_af1bd90870354b55e22dcde68aebd61e8}{transcript}} (string \&text, string \&open\+\_\+text)
 \begin{DoxyCompactList}\small\item\em Метод для расшифрования текста. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcode_a65eb1c9f7e1b0659e01ac99d751bf50e}{get\+Valid\+Key}} (int \mbox{\hyperlink{classcode_ae524e38b36f167fbf173bc431ea5130c}{key}}, const string \&Text)
+\begin{DoxyCompactList}\small\item\em Возвращает корректный ключ шифрования. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classcode_ad053d35679991f43421d7ff803776687}{get\+Valid\+Open\+Text}} (string \&s)
+\begin{DoxyCompactList}\small\item\em Проверяет и возвращает корректный открытый текст. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classcode_a967d28685e785bce3dbcb4c325634a5b}{get\+Valid\+Cipher\+Text}} (string \&s, string \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Проверяет и возвращает корректный зашифрованный текст. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcode_ae524e38b36f167fbf173bc431ea5130c}\label{classcode_ae524e38b36f167fbf173bc431ea5130c}} 
+int {\bfseries key}
+\begin{DoxyCompactList}\small\item\em Ключ шифрования. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\doxysubsection{Подробное описание}
 Класс для шифрования и расшифрования текста с использованием числового ключа. 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Конструктор(ы)}
 \mbox{\Hypertarget{classcode_afa56d1b000ff0b23c8ca53a7413588c1}\label{classcode_afa56d1b000ff0b23c8ca53a7413588c1}} 
 \index{code@{code}!code@{code}}
 \index{code@{code}!code@{code}}
@@ -38,7 +53,7 @@ string \mbox{\hyperlink{classcode_af1bd90870354b55e22dcde68aebd61e8}{transcript}
 Конструктор с параметрами ключа и текста. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Аргументы}
 {\em skey} & Числовой ключ. \\
 \hline
 {\em text} & Текст для шифрования. \\
@@ -46,7 +61,7 @@ string \mbox{\hyperlink{classcode_af1bd90870354b55e22dcde68aebd61e8}{transcript}
 \end{DoxyParams}
 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Методы}
 \mbox{\Hypertarget{classcode_ab05696a59d3edffbfa8bfe844abca7ac}\label{classcode_ab05696a59d3edffbfa8bfe844abca7ac}} 
 \index{code@{code}!encryption@{encryption}}
 \index{encryption@{encryption}!code@{code}}
@@ -58,15 +73,88 @@ string \mbox{\hyperlink{classcode_af1bd90870354b55e22dcde68aebd61e8}{transcript}
 Метод для шифрования текста. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Аргументы}
 {\em text} & Текст для шифрования. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Возвращает}
 Зашифрованный текст. 
 \end{DoxyReturn}
 
-\begin{DoxyExceptions}{Exceptions}
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если текст некорректен. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcode_a967d28685e785bce3dbcb4c325634a5b}\label{classcode_a967d28685e785bce3dbcb4c325634a5b}} 
+\index{code@{code}!getValidCipherText@{getValidCipherText}}
+\index{getValidCipherText@{getValidCipherText}!code@{code}}
+\doxysubsubsection{\texorpdfstring{getValidCipherText()}{getValidCipherText()}}
+{\footnotesize\ttfamily string code\+::get\+Valid\+Cipher\+Text (\begin{DoxyParamCaption}\item[{string \&}]{s,  }\item[{string \&}]{open\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверяет и возвращает корректный зашифрованный текст. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Зашифрованный текст. \\
+\hline
+{\em open\+\_\+text} & Открытый текст. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Корректный зашифрованный текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если текст некорректен. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcode_a65eb1c9f7e1b0659e01ac99d751bf50e}\label{classcode_a65eb1c9f7e1b0659e01ac99d751bf50e}} 
+\index{code@{code}!getValidKey@{getValidKey}}
+\index{getValidKey@{getValidKey}!code@{code}}
+\doxysubsubsection{\texorpdfstring{getValidKey()}{getValidKey()}}
+{\footnotesize\ttfamily int code\+::get\+Valid\+Key (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{const string \&}]{Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Возвращает корректный ключ шифрования. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Входной ключ. \\
+\hline
+{\em Text} & Предоставленный текст. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Корректный ключ. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если ключ некорректен. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcode_ad053d35679991f43421d7ff803776687}\label{classcode_ad053d35679991f43421d7ff803776687}} 
+\index{code@{code}!getValidOpenText@{getValidOpenText}}
+\index{getValidOpenText@{getValidOpenText}!code@{code}}
+\doxysubsubsection{\texorpdfstring{getValidOpenText()}{getValidOpenText()}}
+{\footnotesize\ttfamily string code\+::get\+Valid\+Open\+Text (\begin{DoxyParamCaption}\item[{string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Проверяет и возвращает корректный открытый текст. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Открытый текст. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Корректный текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
 {\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если текст некорректен. \\
 \hline
 \end{DoxyExceptions}
@@ -81,22 +169,22 @@ string \mbox{\hyperlink{classcode_af1bd90870354b55e22dcde68aebd61e8}{transcript}
 Метод для расшифрования текста. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Аргументы}
 {\em text} & Зашифрованный текст. \\
 \hline
 {\em open\+\_\+text} & Открытый текст. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Возвращает}
 Расшифрованный текст. 
 \end{DoxyReturn}
 
-\begin{DoxyExceptions}{Exceptions}
+\begin{DoxyExceptions}{Исключения}
 {\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если текст некорректен. \\
 \hline
 \end{DoxyExceptions}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
 \item 
-code.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{code_8h}{code.\+h}}\end{DoxyCompactItemize}

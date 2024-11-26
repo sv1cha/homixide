@@ -1,6 +1,6 @@
 /** @file
 * @author Сверчков А.Д.
-* @version 2.0
+* @version 1.0
 * @date 25.11.2024
 */
 #pragma once

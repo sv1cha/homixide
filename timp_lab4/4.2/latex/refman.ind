@@ -1,0 +1,33 @@
+\begin{theindex}
+
+  \item {cipher\_error}, \hyperpage{7}
+    \subitem {cipher\_error}, \hyperpage{8}
+  \item {code}, \hyperpage{8}
+    \subitem {code}, \hyperpage{9}
+    \subitem {encryption}, \hyperpage{10}
+    \subitem {getValidCipherText}, \hyperpage{10}
+    \subitem {getValidKey}, \hyperpage{11}
+    \subitem {getValidOpenText}, \hyperpage{11}
+    \subitem {transcript}, \hyperpage{11}
+  \item {code.h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {encryption}
+    \subitem {code}, \hyperpage{10}
+
+  \indexspace
+
+  \item {getValidCipherText}
+    \subitem {code}, \hyperpage{10}
+  \item {getValidKey}
+    \subitem {code}, \hyperpage{11}
+  \item {getValidOpenText}
+    \subitem {code}, \hyperpage{11}
+
+  \indexspace
+
+  \item {transcript}
+    \subitem {code}, \hyperpage{11}
+
+\end{theindex}
